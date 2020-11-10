@@ -27,6 +27,7 @@ import {
 } from 'react-native/Libraries/NewAppScreen';
 import SearchBar from './components/SearchBar';
 import Profile from './components/Profile';
+import Tabs from './components/Tabs';
 
 declare const global: {HermesInternal: null | {}};
 
@@ -38,6 +39,7 @@ const App = () => {
         <SearchBar />
         <Profile />
       </SafeAreaView>
+      <Tabs />
     </>
   );
 };
