@@ -1,6 +1,6 @@
 /* eslint-disable react-native/no-inline-styles */
 import React from 'react';
-import {TextInput, View, Text, Pressable} from 'react-native';
+import {TextInput, Button, View} from 'react-native';
 
 const SearchBar = () => {
   return (
@@ -10,30 +10,20 @@ const SearchBar = () => {
         // flex: 3,
         flexDirection: 'row',
       }}>
-      <Pressable>
-        <Text
-          style={{
-            color: '#6C6F75',
-            paddingTop: '3%',
-            paddingLeft: '2%',
-          }}>
-          Back
-        </Text>
-      </Pressable>
+      <Button color="white" title="<" onPress={() => {}} />
       <TextInput
         style={{
           borderRadius: 20,
-          color: '#6C6F75',
+          color: 'black',
           backgroundColor: '#EBECF0',
           height: 40,
           borderColor: 'gray',
           paddingLeft: '10%',
-          marginLeft: '3%',
+          marginLeft: '5%',
           marginRight: '90%',
           width: '85%',
-          fontFamily: 'Raleway-Medium',
         }}>
-        Gandalf the White
+        Search
       </TextInput>
     </View>
   );

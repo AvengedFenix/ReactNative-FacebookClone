@@ -1,6 +1,6 @@
 /* eslint-disable react-native/no-inline-styles */
 import React from 'react';
-import {View, Image, StyleSheet, Text, Pressable} from 'react-native';
+import {View, Image, StyleSheet, Text, Button, Pressable} from 'react-native';
 // import gandalfBG from '../assets/images/gandalf_background.jpg';
 
 const Profile = () => {
@@ -34,7 +34,6 @@ const Profile = () => {
       paddingRight: '10%',
       paddingLeft: '10%',
       marginTop: '-1%',
-      textAlign: 'center',
     },
     addFriend: {
       borderRadius: 4,
@@ -47,12 +46,6 @@ const Profile = () => {
       borderRadius: 4,
       marginLeft: '3%',
       width: 40,
-    },
-    optionsButtonsText: {
-      color: '#2B2C30',
-      paddingTop: '3%',
-      fontFamily: 'Poppins-Medium',
-      alignSelf: 'center',
     },
   });
 
@@ -97,10 +90,26 @@ const Profile = () => {
             </Text>
           </Pressable>
           <Pressable style={styles.optionsButtons}>
-            <Text style={styles.optionsButtonsText}>x</Text>
+            <Text
+              style={{
+                color: '#2B2C30',
+                paddingTop: '3%',
+                fontFamily: 'Poppins-Medium',
+                alignSelf: 'center',
+              }}>
+              x
+            </Text>
           </Pressable>
           <Pressable style={styles.optionsButtons}>
-            <Text style={styles.optionsButtonsText}>...</Text>
+            <Text
+              style={{
+                color: '#2B2C30',
+                paddingTop: '3%',
+                fontFamily: 'Poppins-Medium',
+                alignSelf: 'center',
+              }}>
+              ...
+            </Text>
           </Pressable>
         </View>
       </View>
